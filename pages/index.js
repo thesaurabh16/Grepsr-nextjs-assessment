@@ -1,24 +1,55 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
+  //   <h1 className={styles.title}>
+  //  <link href="/posts/first-post" >this page!</link>
+  //   </h1>
     <div className={styles.container}>
+      <div style={{ textAlign:'center', maxWidth:'400px', margin:'auto'}}> 
+      <h1 color='blue'>grepsr</h1>
+      <h2>Hello! this project is React Intern Assesment</h2>
+       </div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        {/* <h1 className={styles.title}>
+          Read <Link href="/posts/first-post">this page</Link>
+        </h1> */}
 
-        <p className={styles.description}>
+        <h2  className={styles.title}> 
+           click for <Link href="/login">login page</Link>
+          </h2>
+
+          {/* <h2  className={styles.title}>
+          Read <Link href="/products">products details page</Link>
+          </h2>
+
+          <h2  className={styles.title}>
+          Read <Link href="/categories">products details page</Link>
+          </h2>
+
+          <h2  className={styles.details}>
+          Read <Link href="/product/[productId]">products details page</Link>
+          </h2> */}
+          {/* <Link href="/product/[productId]" as="/product/123">
+             <a>View Product Details</a>
+          </Link> */}
+{/* 
+          <h2  className={styles.chart}>
+          Read <Link href="./components/PieChart">piecharts details page</Link>
+          </h2> */}
+
+        {/* <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
-        </p>
+        </p> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -46,7 +77,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer>
@@ -127,5 +158,7 @@ export default function Home() {
         }
       `}</style>
     </div>
+
+
   );
 }
